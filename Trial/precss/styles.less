@@ -1,0 +1,238 @@
+@import "var.less";
+@import "smart-grid.less";
+
+.reset();
+
+body{
+    color: #8b8b8b;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+.header{
+    background-image: url(../img/fbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 110vh;
+}
+
+.container{
+    .wrapper();
+}
+
+.row{
+    padding-top: 50px;
+    .row-flex();
+    justify-content: space-around;
+}
+
+.logo{
+    .col();
+    .size(2);
+    width: 147px;
+}
+.menu{
+    .col();
+    .size(1);
+    color: @white;
+    font-size: 24px;
+}
+
+.header__title{
+    margin-top: 190px;
+    color: @white;
+    font-family: "Open Sans";
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 2.08px;
+    .row-flex();
+    .col();    
+    justify-content: center;
+    .sm(font-size, 40px);
+    .xs(font-size, 25px);
+}
+
+form{
+    margin-top: 27px;
+    .row-flex();
+    .col();
+    justify-content: center;
+    .xs(flex-direction, column);
+    input{
+        width: 326px;
+        height: 40px;
+        border: 0;
+        padding-left: 10px;
+        font-size: 16px;
+        .xs(width, auto);
+    }
+    .btn{
+        padding: 10px 49px;
+        background-color: @accent;
+        color: @white;
+        font-weight: 700;
+        letter-spacing: 0.64px;
+        .xs(width, auto);
+    }
+
+}
+
+.destinations__wrapper{
+    .row-flex();
+}
+.card{
+    .col();
+    .size(3);
+    .size-sm(6);
+    .size-xs(12);
+    box-shadow: 0 2px 0 #e1e0d8;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    span{
+        color: @white;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.24px;
+        position: absolute;
+        right: 6%;
+        bottom: 36%;
+        
+    }
+    img{
+        width: 280px;
+    }
+    .card__title{
+        color: #323232;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.28px;
+        padding: 20px;
+    }
+    .card__text{
+        color: @grey;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 17px;
+    }
+}
+
+.section__title{
+    .row-flex();
+    .col();
+    .size(12);
+    
+
+    margin-top: 60px;
+    margin-left: 0;
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+}
+.section__subtitle{
+    .row-flex();
+    .col();
+    .size(12);
+    margin-left: 0;
+    margin-top: 13px;
+    margin-bottom: 36px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.advantages__title{
+    margin-top: 150px;
+    margin-bottom: 56px;
+    color: #323232;
+    font-family: "Open Sans";
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 2.08px;
+}
+
+.advantages__wrapper{
+    .row-flex();
+
+}
+
+.item{
+    .col();
+    .size(4);
+    .size-sm(6);
+    .size-xs(12);
+    
+    &__title{
+        color: #323232;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.32px;
+        margin-bottom: 18px;
+    }
+    &__text{
+        color: #8b8b8b;
+        font-family: "Open Sans";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        margin-bottom: 108px;
+    }
+}
+
+footer{
+    padding: 20px;
+}
+
+.footer__wrapper{
+    .row-flex();
+    align-items: center;
+    
+    
+    .footer__text{
+        .col();
+        .size(6);
+        .size-xs(12);
+        .xs(text-align, center);
+
+    }
+    
+    .footer__nav{
+        .col();
+        .size(4);
+        .size-xs(12);
+
+        .nav__list{
+            display: flex;
+            justify-content: center;
+            .xs(flex-direction, column);
+            .xs(align-items, center);
+            .xs(margin-top, 10px);
+
+            li{ 
+                padding: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: #323232;
+                text-transform: uppercase;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        
+    }
+}
